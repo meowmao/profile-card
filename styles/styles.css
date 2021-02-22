@@ -1,0 +1,126 @@
+:root{
+    --dkCyan: hsl(185, 75%, 39%);
+    --verydkblue: hsl(229, 23%, 23%);
+    --dkgrayblue: hsl(227, 10%, 46%);
+    --dkGray: hsl(0, 0%, 59%);
+
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Kumbh Sans";
+    background: var(--dkCyan);
+  }
+
+h1{
+    color: var(--verydkblue);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+h2{
+    color: var(--dkgrayblue);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+h3{
+    color: var(--dkgrayblue);
+    font-size: 9px;
+    font-weight: 400;
+}
+
+h1, h2, h3{
+    margin-bottom:0;
+    margin-top: 0;
+}
+
+svg{
+    position: absolute;
+    height: 978px;
+    width: 978px;
+    z-index:-4;
+  }
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    position: relative;
+    overflow:hidden;
+  }
+
+  /*START svg top and bottom classes*/
+.wrapper .__top{
+    transform: translate(-400px, -400px);
+}
+
+.wrapper .__bot{
+    transform: translate(400px, 500px);
+   
+}
+/*END svg top and bottom classes*/
+
+
+.profile{
+    width: 326px;
+    height: 376px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    overflow:hidden;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px var(--dkgrayblue);
+    z-index:-2;
+    position: relative;
+}
+
+.profile .__bg{
+    width: 100%;
+    height: 140px;
+    background-image:url("../images/bg-pattern-card.svg");
+    position: absolute;
+    z-index:-1;
+    width: 326px; /*same as .profile width*/
+}
+
+.profile .image-name{
+    width: 100%;
+    border-bottom: 1px solid rgb(224, 222, 222);
+    padding-bottom:25px;  
+}
+
+.profile .image-name img{    
+    border-radius: 50%;
+    border: 5px solid white;
+    margin-top: 87px;
+}
+
+.profile .image-name h1{
+    margin-bottom:  17px;
+}
+
+.profile .image-name h1 span{
+    font-weight: 400;
+}
+
+.profile .deets{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.profile .deets h3{
+    margin-top: 12px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+
+}
